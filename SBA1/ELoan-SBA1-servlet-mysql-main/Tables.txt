@@ -1,0 +1,40 @@
+CREATE TABLE userIds( 
+USER_NAME varchar(100),  
+PASSWORD varchar(100));
+
+CREATE TABLE userInfo(
+USER_NAME PRIMARY KEY varchar(100),
+FIRST_NAME varchar(100),
+LAST_NAME varchar(100),
+DOB DATE,
+GENDER varchar(10),
+MOBILE varchar(100),
+EMAIL varchar(100,
+CITY varchar(100),
+COUNTRY varchar(100),
+PINCODE varchar(100),
+ADDRESS varchar(200));
+
+CREATE TABLE loan_Info(
+APPLICATION_NUMBER PRIMARY KEY int,
+PURPOSE varchar(100),
+AMOUNT_REQUESTED double,
+DATE_OF_APPLICATION DATE,
+BUSINESS_STRUCTURE varchar(100),
+BUSINESS_INDICATOR varchar(100),
+TAX_INDICATOR varchar(100),
+ADDRESS varchar(200),
+EMAIL varchar(100),
+MOBILE_NUMBER int,
+STATUS varchar(100));
+
+CREATE TABLE aproved_loan(
+APPLICATION_NUMBER PRIMARY KEY int,
+AMOUNT_SANCTIONED double,
+LOAN_TERM int,
+PSD varchar(100),
+LCD varchar(100),
+EMI double);
+
+
+
